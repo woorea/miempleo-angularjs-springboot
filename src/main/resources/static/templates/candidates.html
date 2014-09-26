@@ -1,0 +1,148 @@
+<div class="container-fluid">
+	
+	<ng-include src="'templates/header.html'"></ng-include>
+	
+	<div class="row" ng-controller="SearchController">
+	  <div class="col-lg-2">
+	      <h2>Search</h2>
+	      <div class="checkbox">
+	        <label>
+	          <input type="checkbox" value="">
+	          Search with my CV
+	        </label>
+	      </div>
+	      <div class="checkbox">
+	        <label>
+	          <input type="checkbox" value="">
+	          Set a threshold
+	        </label>
+	      </div>
+	      <div class="form-group">
+	        <label for="keywords" class="sr-only">Keywords</label>
+	        <input type="text" class="form-control" id="keywords" placeholder="Keywords" ng-model="query.keywords">
+	      </div>
+	      <div class="form-group">
+	        <label for="areaOfExpertise" class="sr-only">Area of expertise</label>
+	        <select class="form-control" id="areaOfExpertise">
+	          <option value="">Area of expertise</option>
+	        </select>
+	      </div>
+	      <div class="form-group">
+	        <label for="jobTitle" class="sr-only">Job title</label>
+	        <select class="form-control" id="jobTitle">
+	          <option value="">Job Title</option>
+	        </select>
+	      </div>
+	      <div class="form-group">
+	        <label for="educationLevel" class="sr-only">Education level</label>
+	        <select class="form-control" id="educationLevel">
+	          <option value="">Education level</option>
+	        </select>
+	      </div>
+	      <div class="form-group">
+	        <label for="exampleInputEmail1" class="sr-only">Location</label>
+	        <input type="text" class="form-control" id="location" placeholder="Location">
+	      </div>
+	      <div class="form-group" style="position: relative">
+	        <label for="maxDistance" style="margin-bottom: 14px">Max. distance</label>
+	        <input type="number" class="form-control" id="maxDistance" placeholder="Distance">
+	        <select class="form-control" id="distanceMeasure" style="position: absolute; top: 0px; right: 0px; height: 30px; width: auto">
+	          <option value="km">Km.</option>
+	        </select>
+	      </div>
+	      <div class="form-group" style="position: relative">
+	        <label for="salary" style="margin-bottom: 14px">Salary</label>
+	        <input type="number" class="form-control" id="salary" placeholder="Salary">
+	        <select class="form-control" id="salaryMeasure" style="position: absolute; top: 0px; right: 0px; height: 30px; width: auto">
+	          <option value="km">&euro; / month</option>
+	        </select>
+	      </div>
+	      <div class="form-group" style="position: relative">
+	        <label for="maxHoursPerWeek" style="margin-bottom: 14px">Max. hours per week</label>
+	        <input type="number" class="form-control" id="maxHoursPerWeek" placeholder="Max. hours per week">
+	      </div>
+	  </div>
+	  <div class="col-lg-10" ng-controller="ResultsController" results>
+	    <h2>Results</h2>
+	    <div class="row">
+	      <div class="col-lg-12">
+	        <span>Show results:</span>
+	        <label class="checkbox-inline">
+	          <input type="checkbox" id="showMap" ng-model="ui.showMap"> map
+	        </label>
+	        <label class="checkbox-inline">
+	          <input type="checkbox" id="showList" ng-model="ui.showList"> list
+	        </label>
+	        <span ng-show="ui.showList">
+	          <label class="radio-inline">
+	            <input type="radio" name="listModeCompact" id="list-mode-compact" ng-model="ui.listModeCompact" ng-value="true"> compact
+	          </label>
+	          <label class="radio-inline">
+	            <input type="radio" name="listModeCompact" id="list-mode-detail" ng-model="ui.listModeCompact" ng-value="false"> detailed
+	          </label>
+	        </span>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div ng-class="{'col-lg-6' : ui.showList, 'col-lg-12' : !ui.showList}" ng-show="ui.showMap">
+	        <a href="#">How can i use this map?</a>
+	        <div id="map-canvas" style="display: block; height: 525px; margin: 0; padding: 0; background: #F1F1F1"></div>
+	      </div>
+	      <div ng-class="{'col-lg-6' : ui.showMap, 'col-lg-12' : !ui.showMap}" ng-show="ui.showList">
+	        <a href="#">Compare checked jobs</a>
+	        <table class="table table-striped">
+	          <thead>
+	            <tr>
+	              <th width="1%"><input type="checkbox" /></th>
+	              <th width="50%">Job Name</th>
+	              <th width="48%">Location</th>
+	              <th width="1%"></th>
+	            </tr>
+	          </thead>
+	          <tbody ng-repeat="job in jobs" marker>
+	            <tr>
+	              <td><input type="checkbox" /></td>
+	              <td>{{job.title}}</td>
+	              <td>Getafe</td>
+	              <td class="text-right" style="white-space: nowrap">
+	                <button class="btn btn-sm btn-default">
+	                  <i class="fa fa-info fa-fw"></i>
+	                </button>
+	                <button class="btn btn-sm btn-default">
+	                  <i class="fa fa-search fa-fw"></i>
+	                </button>
+	              </td>
+	            </tr>
+	            <tr ng-hide="ui.listModeCompact">
+	              <td></td>
+	              <td colspan="3">
+	              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus nisi at nunc viverra sodales. Vivamus viverra nisi elit. Duis vehicula quis sapien a gravida. Praesent ornare metus finibus, blandit urna at, porttitor ipsum. In rhoncus turpis eget sollicitudin pharetra. Vestibulum magna ante, vulputate ac aliquet vestibulum, auctor et quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus consequat neque at ligula ultrices laoreet. Pellentesque et finibus est.
+	              </td>
+	            </tr>
+	          </tbody>
+	        </table>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-6 col-lg-offset-6 text-center">
+	        <div class="pull-right">
+	          <ul class="pagination">
+	            <li><a href="#">1</a></li>
+	            <li><a href="#">2</a></li>
+	            <li><a href="#">3</a></li>
+	            <li><a href="#">4</a></li>
+	            <li><a href="#">5</a></li>
+	          </ul>
+	        </div>
+	        <div class="pull-left">
+	          <ul class="pagination">
+	            <li><a href="#">&laquo;</a></li>
+	            <li><a href="#">&raquo;</a></li>
+	          </ul>
+	        </div>
+	        <div style="margin-top: 25px">1 - 15</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>

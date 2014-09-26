@@ -1,0 +1,113 @@
+{
+"list" : [{
+    "id": "usajobs:358977800",
+    "title": "NURSE PRACTITIONER",
+    "organization_name": "Immigration and Customs Enforcement",
+    "rate_interval_code": "PA",
+    "minimum": 52344,
+    "maximum": 87408,
+    "start_date": "2014-01-23",
+    "end_date": "2014-09-30",
+    "locations": ["Eloy, AZ", "Florence, AZ", "El Centro, CA", "San Diego, CA", "Santa Ana, CA", "Key West, FL", "Miami, FL", "Lumpkin, GA", "Jena, LA", "Elizabeth, NJ", "Batavia, NY", "Leesport, PA", "York, PA", "El Paso, TX", "Houston, TX", "Los Fresnos, TX", "Pearsall, TX", "Taylor, TX", "Tacoma, WA"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/358977800"
+}, {
+    "id": "usajobs:358986600",
+    "title": "REGISTERED NURSE",
+    "organization_name": "Immigration and Customs Enforcement",
+    "rate_interval_code": "PA",
+    "minimum": 39768,
+    "maximum": 74880,
+    "start_date": "2014-01-24",
+    "end_date": "2014-09-30",
+    "locations": ["Eloy, AZ", "Florence, AZ", "El Centro, CA", "San Diego, CA", "Santa Ana, CA", "Key West, FL", "Miami, FL", "Lumpkin, GA", "Jena, LA", "Elizabeth, NJ", "Batavia, NY", "Leesport, PA", "York, PA", "El Paso, TX", "Houston, TX", "Los Fresnos, TX", "Pearsall, TX", "Taylor, TX", "Tacoma, WA"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/358986600"
+}, {
+    "id": "usajobs:380949800",
+    "title": "Nurse Consultant",
+    "organization_name": "U.S. Army Medical Command",
+    "rate_interval_code": "PA",
+    "minimum": 65377,
+    "maximum": 84990,
+    "start_date": "2014-09-15",
+    "end_date": "2014-09-28",
+    "locations": ["West Point, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/380949800"
+}, {
+    "id": "usajobs:381403200",
+    "title": "Nurse Practitioner-Oncology",
+    "organization_name": "Veterans Affairs, Veterans Health Administration",
+    "rate_interval_code": "PA",
+    "minimum": 69087,
+    "maximum": 100154,
+    "start_date": "2014-09-18",
+    "end_date": "2014-10-01",
+    "locations": ["Buffalo, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/381403200"
+}, {
+    "id": "usajobs:381028200",
+    "title": "Registered Nurse - Clinical Nurse Educator",
+    "organization_name": "Veterans Affairs, Veterans Health Administration",
+    "rate_interval_code": "PA",
+    "minimum": 45681,
+    "maximum": 93222,
+    "start_date": "2014-09-15",
+    "end_date": "2014-09-29",
+    "locations": ["Syracuse, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/381028200"
+}, {
+    "id": "usajobs:375087500",
+    "title": "Nurse Practitioner - (Psychiatric)",
+    "organization_name": "Veterans Affairs, Veterans Health Administration",
+    "rate_interval_code": "PA",
+    "minimum": 72092,
+    "maximum": 95874,
+    "start_date": "2014-07-15",
+    "end_date": "2015-07-14",
+    "locations": ["Bath, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/375087500"
+}, {
+    "id": "usajobs:380082300",
+    "title": "Nurse -  WHEN Supervisor/NOD",
+    "organization_name": "Veterans Affairs, Veterans Health Administration",
+    "rate_interval_code": "PA",
+    "minimum": 67414,
+    "maximum": 118782,
+    "start_date": "2014-09-04",
+    "end_date": "2014-09-24",
+    "locations": ["Northport, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/380082300"
+}, {
+    "id": "usajobs:380256400",
+    "title": "Registered Nurse (Nurse Executive)",
+    "organization_name": "Veterans Affairs, Veterans Health Administration",
+    "rate_interval_code": "PA",
+    "minimum": 130303,
+    "maximum": 157100,
+    "start_date": "2014-09-06",
+    "end_date": "2014-10-17",
+    "locations": ["Northport, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/380256400"
+}, {
+    "id": "usajobs:380620800",
+    "title": "Registered Nurse (PACT)",
+    "organization_name": "Veterans Affairs, Veterans Health Administration",
+    "rate_interval_code": "PA",
+    "minimum": 45681,
+    "maximum": 93222,
+    "start_date": "2014-09-10",
+    "end_date": "2014-09-24",
+    "locations": ["Syracuse, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/380620800"
+}, {
+    "id": "usajobs:380732600",
+    "title": "RN: Nursing Supervisor (Intermittent)",
+    "organization_name": "Veterans Affairs, Veterans Health Administration",
+    "rate_interval_code": "PA",
+    "minimum": 47775,
+    "maximum": 96449,
+    "start_date": "2014-09-11",
+    "end_date": "2014-09-22",
+    "locations": ["Albany, NY"],
+    "url": "https://www.usajobs.gov/GetJob/ViewDetails/380732600"
+}]
+}

@@ -1,0 +1,20 @@
+<div class="row" style="background: #0C0636">
+  <h1 style="position: absolute; top: 10px; left: 10px; color: white">
+    <i class="fa fa-thumbs-o-up"></i>
+    <span>miempleo</span>
+  </h1>
+  <div style="position: absolute; top: 10px; right: 10px">
+    <button class="btn btn-default">About miempleo</button>
+  </div>
+  <ul id="menu" class="nav nav-tabs" role="tablist" style="padding: 60px 0 0 230px; border:0">
+    <li class="candidate" ng-class="{active : $location.path() == '/'}">
+      <a href="#/">Candidate</a>
+    </li>
+    <li class="recruiter" ng-class="{active : $location.path() == '/recruiter'}">
+      <a href="#/recruiter">Recruiter</a>
+    </li>
+  </ul>
+  <div ng-class="{candidate : $location.path() == '/', recruiter : $location.path() == '/recruiter'}">
+    <br />
+  </div>
+</div>
